@@ -1,24 +1,34 @@
-import logo from './logo.svg';
+import 'bulma/css/bulma.min.css';
+import NavBar from './components/NavBar/NavBar';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import ConsultaTallasContainer from './components/ConsultaTallasContainer/ConsultaTallasContainer';
+import Dash from './components/Dash/Dash';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+          <NavBar />
+          <br></br><br></br><br></br>
+            <Routes>
+              <Route
+                path='/'
+                element={<Dash
+                />}
+              />    
+              <Route
+                path='/modelo/:modelo'
+                element={<ConsultaTallasContainer
+                titulo='TPEE7900'
+                />}
+              />         
+          </Routes>
+      </BrowserRouter>
+      
+      
     </div>
+
   );
 }
 
