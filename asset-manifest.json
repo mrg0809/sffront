@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/sffront/static/css/main.7a8a7be7.css",
+    "main.js": "/sffront/static/js/main.219402b7.js",
+    "static/js/787.daa75f82.chunk.js": "/sffront/static/js/787.daa75f82.chunk.js",
+    "index.html": "/sffront/index.html",
+    "main.7a8a7be7.css.map": "/sffront/static/css/main.7a8a7be7.css.map",
+    "main.219402b7.js.map": "/sffront/static/js/main.219402b7.js.map",
+    "787.daa75f82.chunk.js.map": "/sffront/static/js/787.daa75f82.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7a8a7be7.css",
+    "static/js/main.219402b7.js"
+  ]
+}
