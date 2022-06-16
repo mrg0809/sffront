@@ -2,13 +2,14 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import ConsultaTallas from "../ConsultaTallas/ConsultaTallas";
 
-function ConsultaTallasContainer({titulo}) {
+function ConsultaTallasContainer() {
     const [loading, setLoading] = useState(true)
     const [tallas, setTallas] = useState()
 
 const {modelo} = useParams()
 
-useEffect(()=>{  
+useEffect(()=>{
+        setLoading(true)
         fetch(`http://44.203.64.187/articulos/${modelo}`,
         {
         method: 'GET',
@@ -24,8 +25,8 @@ useEffect(()=>{
 
     return (
         <div>
-            <article className="message is-danger">
-                <div className="message-body">
+            <article className="message is-dark is-large">
+                <div className="message-header">
                     <strong>{modelo}</strong>
                 </div>
             </article>
@@ -33,7 +34,7 @@ useEffect(()=>{
             <div className='columns is-multiline'>
                 <div className='column'>
                     { loading ?
-                        <img src='http://sfan.ddns.net:2090/SF/Curve-Loading.gif' />
+                        <img src='http://sfan.ddns.net:2090/SF/Curve-Loading.gif' alt="loading" />
                     :
                             <ConsultaTallas tallas = {tallas}/>
                         
@@ -41,7 +42,7 @@ useEffect(()=>{
                 </div>
 
                 <div className='column'>
-                    <img src = {`http://sfan.ddns.net:2090/SF/${modelo}.jpg`} />
+                    <img src = {`http://sfan.ddns.net:2090/SF/${modelo}.jpg`} width={500} height={500} alt='imagen articulo'/>
                 </div>
 
             </div>

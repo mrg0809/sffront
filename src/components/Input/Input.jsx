@@ -11,11 +11,10 @@ function Input() {
         })
     }
 
-    console.log(dataForm)
 
     return (
         <>
-            <input className="input is-danger" name="modelo" type="text" placeholder="Modelo" onChange={handleOnChange} value={dataForm.modelo}></input>
+            <input className="input is-dark" name="modelo" type="text" placeholder="Modelo" onChange={handleOnChange} value={dataForm.modelo}></input>
             <Link to={`modelo/${dataForm.modelo}`}><button className="button is-success">Buscar</button></Link>                      
         </>
     )

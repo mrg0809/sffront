@@ -26,7 +26,19 @@ function NavBar() {
             <div className="navbar-dropdown">
               <Link to="/" className="navbar-item">Total</Link>
               <Link to="/" className="navbar-item">Rio 3</Link>
+              <Link to="/" className="navbar-item">Macroplaza</Link>
+              <Link to="/" className="navbar-item">Macroplaza 2</Link>
               <Link to="/" className="navbar-item">Galerias</Link>
+              <Link to="/" className="navbar-item">Palmas</Link>
+              <Link to="/" className="navbar-item">Senderos EVF</Link>
+              <Link to="/" className="navbar-item">Senderos SF</Link>
+              <Link to="/" className="navbar-item">Ensenada 1</Link>
+              <Link to="/" className="navbar-item">Ensenada 2</Link>
+              <Link to="/" className="navbar-item">Ensenada 3</Link>
+              <Link to="/" className="navbar-item">Mexicali 1</Link>
+              <Link to="/" className="navbar-item">Mexicali 2</Link>
+              <Link to="/" className="navbar-item">Las Torres</Link>
+              <Link to="/" className="navbar-item">Gran Patio</Link>
             </div>
             
           </div>

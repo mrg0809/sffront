@@ -3,7 +3,7 @@
 function ConsultaTallas({tallas}) {
     return (
         <>
-            <table className="table is-hoverable is-fullwidth mx-auto">
+            <table className="table is-hoverable m-auto">
                 <thead>
                     <tr>
                         <th>Almacen/Tallas</th>
@@ -12,7 +12,7 @@ function ConsultaTallas({tallas}) {
                 </thead>
 
                 <tbody>
-                    <tr>
+                    <tr className="is-selected">
                         <td>Bodega Tijuana SF</td>
                         {tallas['Bodega Tijuana'].map(tallas => <td>{tallas}</td>)}
                     </tr>

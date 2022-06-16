@@ -20,7 +20,6 @@ function App() {
               <Route
                 path='/modelo/:modelo'
                 element={<ConsultaTallasContainer
-                titulo=''
                 />}
               />         
           </Routes>
