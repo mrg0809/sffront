@@ -10,7 +10,7 @@ const {modelo} = useParams()
 
 useEffect(()=>{
         setLoading(true)
-        fetch(`http://44.203.64.187/articulos/${modelo}`,
+        fetch(`http://100.26.208.206:5000/articulos/${modelo}`,
         {
         method: 'GET',
         mode: 'cors'
@@ -27,7 +27,7 @@ useEffect(()=>{
         <div>
             <article className="message is-dark is-large">
                 <div className="message-header">
-                    <strong>{modelo}</strong>
+                    <strong>{modelo.toUpperCase()} &nbsp; - &nbsp; $ {loading ? <br></br> : tallas['Precio']}</strong>
                 </div>
             </article>
 
