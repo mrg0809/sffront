@@ -10,7 +10,7 @@ const {modelo} = useParams()
 
 useEffect(()=>{
         setLoading(true)
-        fetch(`http://100.26.208.206:5000/articulos/${modelo}`,
+        fetch(`http://127.0.0.1:8000/articulos/${modelo}`,
         {
         method: 'GET',
         mode: 'cors'

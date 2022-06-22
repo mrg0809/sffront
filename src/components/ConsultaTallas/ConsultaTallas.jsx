@@ -80,6 +80,30 @@ function ConsultaTallas({tallas}) {
                         <td>{tallas['Ensenada 3'].reduce((a, b) => a + b, 0)}</td>
                         <td>{tallas['Ventas'][9]}</td>
                     </tr>
+                    <tr>
+                        <td>Mexicali 1</td>
+                        {tallas['Mexicali 1'].map(tallas => <td>{tallas}</td>)}
+                        <td>{tallas['Mexicali 1'].reduce((a, b) => a + b, 0)}</td>
+                        <td>{tallas['Ventas'][10]}</td>
+                    </tr>
+                    <tr>
+                        <td>Mexicali 2</td>
+                        {tallas['Mexicali 2'].map(tallas => <td>{tallas}</td>)}
+                        <td>{tallas['Mexicali 2'].reduce((a, b) => a + b, 0)}</td>
+                        <td>{tallas['Ventas'][11]}</td>
+                    </tr>
+                    <tr>
+                        <td>Torres Leo</td>
+                        {tallas['Torres Leo'].map(tallas => <td>{tallas}</td>)}
+                        <td>{tallas['Torres Leo'].reduce((a, b) => a + b, 0)}</td>
+                        <td>{tallas['Ventas'][12]}</td>
+                    </tr>
+                    <tr>
+                        <td>Gran Patio</td>
+                        {tallas['Gran Patio'].map(tallas => <td>{tallas}</td>)}
+                        <td>{tallas['Gran Patio'].reduce((a, b) => a + b, 0)}</td>
+                        <td>{tallas['Ventas'][13]}</td>
+                    </tr>
 
                 </tbody>
 
