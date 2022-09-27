@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import Input from "../Input/Input";
 
 function NavBar() {
+  const [isActive, setisActive] = useState(false);
     return (
 
 <nav className="navbar is-white has-shadow is-fixed-top" role="navigation" aria-label="main navigation">
@@ -10,14 +12,19 @@ function NavBar() {
       <img src="https://cdn.shopify.com/s/files/1/0284/3046/7144/files/Logo_SF_180x.png?v=1589620799" alt="carritoimg"></img>
     </Link>
 
-    <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+    <a role="button" className={`navbar-burger burger${isActive ? "is-active" : ""}`}
+     aria-label="menu"
+     aria-expanded="false"
+     data-target="navbarBasicExample"
+     onClick={() => setisActive(!isActive)}
+     >
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
     </a>
   </div>
 
-  <div id="navbarBasicExample is-center" className="navbar-menu">
+  <div id="navbarBasicExample is-center" className={`navbar-menu${isActive ? "is-active" : ""}`}>
   <div className="navbar-start">
           <Link to="/" className="navbar-item">Dashboard</Link>
           <Link to="/ventas" className="navbar-item">Ventas</Link>
