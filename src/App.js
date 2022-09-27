@@ -1,11 +1,16 @@
 import 'bulma/css/bulma.min.css';
 import NavBar from './components/NavBar/NavBar';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, Switch, Redirect, Link } from 'react-router-dom';
 import './App.css';
 import ConsultaTallasContainer from './components/ConsultaTallasContainer/ConsultaTallasContainer';
 import Dash from './components/Dash/Dash';
+import React, { useState } from 'react'
+import ConsultaVentasContainer from './components/ConsultaVentasContainer/ConsultaVentasContainer';
+
+const AuthApi = React.createContext();
 
 function App() {
+  const [auth, setAuth] = useState(false)
   return (
     <div className="App">
       <BrowserRouter>
@@ -21,7 +26,12 @@ function App() {
                 path='/modelo/:modelo'
                 element={<ConsultaTallasContainer
                 />}
-              />         
+              />
+              <Route
+                path='/ventas'
+                element={<ConsultaVentasContainer
+                />}
+              />        
           </Routes>
       </BrowserRouter>
       
