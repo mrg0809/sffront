@@ -20,7 +20,7 @@ function NavBar() {
   <div id="navbarBasicExample is-center" className="navbar-menu">
   <div className="navbar-start">
           <Link to="/" className="navbar-item">Dashboard</Link>
-          <Link to="/" className="navbar-item">Ventas</Link>
+          <Link to="/ventas" className="navbar-item">Ventas</Link>
           <div className="navbar-item has-dropdown is-hoverable">
             <a className="navbar-link">Mejores Articulos</a>
             <div className="navbar-dropdown">
@@ -28,7 +28,6 @@ function NavBar() {
               <Link to="/" className="navbar-item">Rio 3</Link>
               <Link to="/" className="navbar-item">Macroplaza</Link>
               <Link to="/" className="navbar-item">Macroplaza 2</Link>
-              <Link to="/" className="navbar-item">Galerias</Link>
               <Link to="/" className="navbar-item">Palmas</Link>
               <Link to="/" className="navbar-item">Senderos EVF</Link>
               <Link to="/" className="navbar-item">Senderos SF</Link>

@@ -39,70 +39,64 @@ function ConsultaTallas({tallas}) {
                         <td>{tallas['Ventas'][2]}</td>
                     </tr>
                     <tr>
-                        <td>Galerias</td>
-                        {tallas['Galerias'].map(tallas => <td>{tallas}</td>)}
-                        <td>{tallas['Galerias'].reduce((a, b) => a + b, 0)}</td>
-                        <td>{tallas['Ventas'][3]}</td>
-                    </tr>
-                    <tr>
                         <td>Palmas</td>
                         {tallas['Palmas'].map(tallas => <td>{tallas}</td>)}
                         <td>{tallas['Palmas'].reduce((a, b) => a + b, 0)}</td>
-                        <td>{tallas['Ventas'][4]}</td>
+                        <td>{tallas['Ventas'][3]}</td>
                     </tr>
                     <tr>
                         <td>Senderos EVF</td>
                         {tallas['Senderos EVF'].map(tallas => <td>{tallas}</td>)}
                         <td>{tallas['Senderos EVF'].reduce((a, b) => a + b, 0)}</td>
-                        <td>{tallas['Ventas'][5]}</td>
+                        <td>{tallas['Ventas'][4]}</td>
                     </tr>
                     <tr>
                         <td>Senderos SF</td>
                         {tallas['Senderos SF'].map(tallas => <td>{tallas}</td>)}
                         <td>{tallas['Senderos SF'].reduce((a, b) => a + b, 0)}</td>
-                        <td>{tallas['Ventas'][6]}</td>
+                        <td>{tallas['Ventas'][5]}</td>
                     </tr>
                     <tr>
                         <td>Ensenada 1</td>
                         {tallas['Ensenada 1'].map(tallas => <td>{tallas}</td>)}
                         <td>{tallas['Ensenada 1'].reduce((a, b) => a + b, 0)}</td>
-                        <td>{tallas['Ventas'][7]}</td>
+                        <td>{tallas['Ventas'][6]}</td>
                     </tr>
                     <tr>
                         <td>Ensenada 2</td>
                         {tallas['Ensenada 2'].map(tallas => <td>{tallas}</td>)}
                         <td>{tallas['Ensenada 2'].reduce((a, b) => a + b, 0)}</td>
-                        <td>{tallas['Ventas'][8]}</td>
+                        <td>{tallas['Ventas'][7]}</td>
                     </tr>
                     <tr>
                         <td>Ensenada 3</td>
                         {tallas['Ensenada 3'].map(tallas => <td>{tallas}</td>)}
                         <td>{tallas['Ensenada 3'].reduce((a, b) => a + b, 0)}</td>
-                        <td>{tallas['Ventas'][9]}</td>
+                        <td>{tallas['Ventas'][8]}</td>
                     </tr>
                     <tr>
                         <td>Mexicali 1</td>
                         {tallas['Mexicali 1'].map(tallas => <td>{tallas}</td>)}
                         <td>{tallas['Mexicali 1'].reduce((a, b) => a + b, 0)}</td>
-                        <td>{tallas['Ventas'][10]}</td>
+                        <td>{tallas['Ventas'][9]}</td>
                     </tr>
                     <tr>
                         <td>Mexicali 2</td>
                         {tallas['Mexicali 2'].map(tallas => <td>{tallas}</td>)}
                         <td>{tallas['Mexicali 2'].reduce((a, b) => a + b, 0)}</td>
-                        <td>{tallas['Ventas'][11]}</td>
+                        <td>{tallas['Ventas'][10]}</td>
                     </tr>
                     <tr>
                         <td>Torres Leo</td>
                         {tallas['Torres Leo'].map(tallas => <td>{tallas}</td>)}
                         <td>{tallas['Torres Leo'].reduce((a, b) => a + b, 0)}</td>
-                        <td>{tallas['Ventas'][12]}</td>
+                        <td>{tallas['Ventas'][11]}</td>
                     </tr>
                     <tr>
                         <td>Gran Patio</td>
                         {tallas['Gran Patio'].map(tallas => <td>{tallas}</td>)}
                         <td>{tallas['Gran Patio'].reduce((a, b) => a + b, 0)}</td>
-                        <td>{tallas['Ventas'][13]}</td>
+                        <td>{tallas['Ventas'][12]}</td>
                     </tr>
 
                 </tbody>
