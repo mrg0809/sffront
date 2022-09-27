@@ -1,6 +1,6 @@
 function ConsultaVentasAyer({ventas}) {
     let total
-    total = ventas[1].map(ventas => ventas[1]).reduce((a, b) => a + b, 0)
+    total = ventas[1].map(ventas => ventas[1]).reduce((a, b) => a + b, 0).toFixed(2)
     return (
         <>
 

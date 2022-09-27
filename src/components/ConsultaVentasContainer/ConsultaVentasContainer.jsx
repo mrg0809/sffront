@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import ConsultaVentasAyer from "../ConsultaVentasAyer/ConsultaVentasAyer";
-import ConsultaVentasHoy from "./ConsultaVentasHoy/ConsultaVentasHoy";
+import ConsultaVentasHoy from "../ConsultaVentasHoy/ConsultaVentasHoy";
 
 function ConsultaVentasContainer() {
     const [loading, setLoading] = useState(true)

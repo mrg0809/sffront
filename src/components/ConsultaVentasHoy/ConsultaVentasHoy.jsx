@@ -1,7 +1,7 @@
 function ConsultaVentasHoy({ventas}) {
     let total
     try {
-        total = ventas[0].map(ventas => ventas[1]).reduce((a, b) => a + b, 0)
+        total = ventas[0].map(ventas => ventas[1]).reduce((a, b) => a + b, 0).toFixed(2)
     } catch (error) {
         console.error(error)
     }
