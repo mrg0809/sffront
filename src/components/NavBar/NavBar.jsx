@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import Input from "../Input/Input";
+import Logout from "../Logout/Logout";
 
 function NavBar() {
   const [isActive, setisActive] = useState(false);
@@ -26,7 +27,7 @@ function NavBar() {
 
   <div id="navbarBasicExample is-center" className={`navbar-menu${isActive ? "is-active" : ""}`}>
   <div className="navbar-start">
-          <Link to="/" className="navbar-item">Dashboard</Link>
+          <Link to="/dash" className="navbar-item">Dashboard</Link>
           <Link to="/ventas" className="navbar-item">Ventas</Link>
           <div className="navbar-item has-dropdown is-hoverable">
             <a className="navbar-link">Mejores Articulos</a>
@@ -55,6 +56,7 @@ function NavBar() {
             <div className="navbar-item">
                 <Input />
             </div>
+      
         </div>
 
   </div>

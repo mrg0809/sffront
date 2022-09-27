@@ -6,6 +6,9 @@ import ConsultaTallasContainer from './components/ConsultaTallasContainer/Consul
 import Dash from './components/Dash/Dash';
 import React, { useState } from 'react'
 import ConsultaVentasContainer from './components/ConsultaVentasContainer/ConsultaVentasContainer';
+import Login from './components/Login/Login'
+import Profile from './components/Profile/Profile'
+import { RequireToken } from './auth';
 
 const AuthApi = React.createContext();
 
@@ -19,8 +22,24 @@ function App() {
             <Routes>
               <Route
                 path='/'
-                element={<Dash
+                element={<Login
                 />}
+              />
+              <Route
+                path='/profile'
+                element={
+                  <RequireToken>
+                    <Profile />
+                  </RequireToken>
+              }
+              />        
+              <Route
+                path='/dash'
+                element={
+                  <RequireToken>
+                    <Dash />
+                  </RequireToken>
+              }
               />    
               <Route
                 path='/modelo/:modelo'
@@ -29,8 +48,11 @@ function App() {
               />
               <Route
                 path='/ventas'
-                element={<ConsultaVentasContainer
-                />}
+                element={
+                  <RequireToken>
+                    <ConsultaVentasContainer />
+                  </RequireToken>
+                }
               />        
           </Routes>
       </BrowserRouter>

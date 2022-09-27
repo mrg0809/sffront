@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import ConsultaVentasAyer from "../ConsultaVentasAyer/ConsultaVentasAyer";
 import ConsultaVentasHoy from "../ConsultaVentasHoy/ConsultaVentasHoy";
+import Logout from "../Logout/Logout";
 
 function ConsultaVentasContainer() {
     const [loading, setLoading] = useState(true)
@@ -28,6 +29,8 @@ return (
         <article className="message is-dark is-large">
             <div className="message-header">
                 <strong>VENTAS</strong>
+
+                <Logout></Logout>
             </div>
         </article>
 
